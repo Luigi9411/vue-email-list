@@ -12,6 +12,11 @@
 	<script src="js/script.js" defer></script>
 </head>
 <body>
-    
+    <div id="app">
+        <button @click="getMail">Genera mail</button>
+        <ul v-for="objMail in arrMail" :key="objMail.date" >
+            <li>{{objMail}}</li>
+        </ul>
+    </div>
 </body>
 </html>

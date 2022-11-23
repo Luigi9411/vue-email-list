@@ -14,8 +14,8 @@
 <body>
     <div id="app">
         <button @click="getMail">Genera mail</button>
-        <ul v-for="objMail in arrMail" :key="objMail.date" >
-            <li>{{objMail}}</li>
+        <ul v-if="arrMail.length === 10">
+            <li v-for="objMail in arrMail">{{objMail}}</li>
         </ul>
     </div>
 </body>
